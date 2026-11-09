@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Info e luoghi — Segnale</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">  <!-- Swiper CSS 14.4.0 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.4.0/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">Segnale<span>Festival di design</span></a>
+      <nav aria-label="Navigazione principale">
+        <a href="index.html">Home</a>
+        <a href="programma.html">Programma</a>
+        <a href="info.html" aria-current="page">Info e luoghi</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenuto" class="container">
+    <section class="intro" aria-labelledby="titolo-info">
+      <p class="eyebrow">12–13 giugno · Torino · Festival immaginario</p>
+      <h1 id="titolo-info">Info e luoghi</h1>
+      <p class="lead">Tutte le informazioni per orientarti tra le sedi del festival e vivere al meglio gli appuntamenti.</p>
+    </section>
+
+    <!-- Sezione Galleria con Swiper -->
+    <section class="content-section" aria-labelledby="titolo-galleria">
+      <h2 id="titolo-galleria">Galleria fotografica delle sedi</h2>
+      <p class="reading-text">Scorri le immagini per scoprire i tre spazi che ospitano gli incontri, i laboratori e le mostre di Segnale.</p>
+      
+      <!-- Slider main container -->
+      <div class="swiper info-swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="assets/luoghi/sede-centrale.jpg" alt="Sede centrale del festival, Corso Duca degli Abruzzi 24" width="1200" height="800">
+            <p class="swiper-caption"><strong>Sede centrale</strong> — Corso Duca degli Abruzzi 24 — Officina Nord nel festival immaginario.</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/luoghi/politecnico-valentino.jpg" alt="Politecnico al Valentino, Viale Mattioli 39" width="1200" height="800">
+            <p class="swiper-caption"><strong>Politecnico al Valentino</strong> — Viale Mattioli 39 — Spazio Forma nel festival immaginario.</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/luoghi/mirafiori.jpg" alt="Sede di Mirafiori, Corso Luigi Settembrini 178" width="1200" height="800">
+            <p class="swiper-caption"><strong>Sede di Mirafiori</strong> — Corso Luigi Settembrini 178 — Cortile Comune nel festival immaginario.</p>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
+    <!-- Sezione Indirizzi e Mappa -->
+    <section class="content-section" aria-labelledby="titolo-mappa">
+      <h2 id="titolo-mappa">Indirizzi e mappa</h2>
+      <p class="reading-text">Le sedi del festival sono facilmente raggiungibili a piedi o con i mezzi pubblici attraverso la rete cittadina di Torino.</p>
+      
+      <!-- Mappa uMap incorporata -->
+      <iframe id="mappa-sedi"
+        title="Mappa delle tre sedi di riferimento per il festival Segnale a Torino"
+        src="https://umap.openstreetmap.fr/it/map/segnale-sedi-del-festival-immaginario_1479665?scaleControl=false&amp;miniMapControl=false&amp;scrollWheelZoom=false&amp;zoomControl=true&amp;editMode=disabled&amp;moreControl=true&amp;searchControl=null&amp;tilelayersControl=null&amp;embedControl=null&amp;datalayersControl=true&amp;onLoadPanel=none&amp;captionBar=false&amp;captionMenus=true#12/45.0465/7.6528"></iframe>
+      
+      <p class="map-fullscreen-link">
+        <a href="https://umap.openstreetmap.fr/it/map/segnale-sedi-del-festival-immaginario_1479665?scaleControl=false&amp;miniMapControl=false&amp;scrollWheelZoom=true&amp;zoomControl=true&amp;editMode=disabled&amp;moreControl=true&amp;searchControl=null&amp;tilelayersControl=null&amp;embedControl=null&amp;datalayersControl=true&amp;onLoadPanel=none&amp;captionBar=false&amp;captionMenus=true#12/45.0465/7.6528" target="_blank" rel="noopener">Visualizza la mappa a schermo intero</a>
+      </p>
+
+      <ul class="venues">
+        <li><strong>Officina Nord (Sede centrale):</strong> Corso Duca degli Abruzzi 24 — Incontri e progetti condivisi.</li>
+        <li><strong>Spazio Forma (Politecnico al Valentino):</strong> Viale Mattioli 39 — Laboratori e sperimentazioni.</li>
+        <li><strong>Cortile Comune (Sede di Mirafiori):</strong> Corso Luigi Settembrini 178 — Mostre e percorsi.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container"><p>Segnale · Progetto didattico · Festival immaginario</p></div></footer>
+
+  <!-- Swiper JS 14.4.0 -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@14.4.0/swiper-bundle.min.js"></script>
+  <!-- Inizializzazione corretta del carosello Swiper -->
+  <script>
+    const swiper = new Swiper('.info-swiper', {
+      loop: false,
+      autoplay: false,
+      slidesPerView: 1,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+</html>
