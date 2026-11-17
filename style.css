@@ -6,6 +6,7 @@
   --colore-primario: #F82B26;
   --colore-primario-scuro: #320B0B;
   --colore-sfondo: #D3E5CB;
+  --colore-sfondo-header: #ADC9CD;
   --colore-testo: #320B0B;
   --colore-bottone-base: #F2B598;
   --colore-testo-bottone: #F5F5F5;
@@ -47,7 +48,8 @@ a:focus-visible {
 
 .site-header {
   padding: 1.25rem 0;
-  border-bottom: 4px solid var(--colore-primario);
+  background-color: var(--colore-sfondo-header);
+  border-bottom: 4px solid var(--colore-bottone-base);
 }
 
 .brand {
@@ -89,7 +91,7 @@ nav a[aria-current="page"] {
 
 .eyebrow,
 .event-meta {
-  color: #46564b;
+  color: var(--colore-testo);
   font-size: 0.875rem;
   font-weight: bold;
 }
@@ -132,7 +134,7 @@ h3 {
   padding: 0.75rem 1.25rem;
   border-radius: 0.5rem;
   background: var(--colore-bottone-base);
-  color: var(--colore-testo-bottone);
+  color: var(--colore-testo);
   font-weight: bold;
   text-decoration: none;
   transition: background-color 0.2s ease;
