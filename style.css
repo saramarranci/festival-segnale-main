@@ -239,14 +239,14 @@ h3 {
 }
 
 .event-place {
-  color: #46564b;
+  color: var(--colore-testo);
   font-size: 0.875rem;
 }
 
 .site-footer {
   padding: 1.25rem 0;
   border-top: 1px solid #b7c0b7;
-  color: #46564b;
+  color: var(--colore-testo);
   font-size: 0.875rem;
 }
 
@@ -263,8 +263,6 @@ h3 {
   top: 1rem;
 }
 
-/* Qui aggiungeremo la media query durante la demo. */
-/* Stili specifici per la galleria Swiper nella pagina Info */
 .info-swiper {
   width: 100%;
   max-width: 54rem;
@@ -289,7 +287,7 @@ h3 {
   color: var(--colore-testo);
   border-top: 1px solid #e2e8e2;
 }
-/* Personalizzazione dei controlli di Swiper con i colori del festival */
+
 .info-swiper {
   position: relative;
 }
@@ -303,7 +301,7 @@ h3 {
   background: var(--colore-primario);
 }
 
-/* Stile per la mappa uMap incorporata */
+
 #mappa-sedi {
   display: block;
   width: 100%;
@@ -320,30 +318,27 @@ h3 {
   font-size: 0.95rem;
 }
 
-/* Frecce Swiper: stato normale */
 .swiper-button-prev,
 .swiper-button-next {
   width: 44px;
   height: 44px;
-  background-color: #ffffff; /* Sfondo iniziale bianco */
+  background-color: #ffffff; 
   border: 1px solid var(--colore-primario);
   border-radius: 50%;
-  color: var(--colore-primario) !important; /* Freccia verde */
+  color: var(--colore-primario) !important;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Modifica la dimensione della freccia interna per farla stare bene nel cerchio */
 .swiper-button-prev::after,
 .swiper-button-next::after {
   font-size: 0.5rem;
   font-weight: bold;
 }
 
-/* Effetto hover: scambio colori (sfondo verde, freccia bianca) */
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
-  background-color: var(--colore-primario) !important; /* Sfondo verde */
-  color: #ffffff !important; /* Freccia bianca */
+  background-color: var(--colore-primario) !important;
+  color: #ffffff !important;
 }
 
 .swiper-button-prev:focus-visible,
