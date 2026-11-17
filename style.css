@@ -7,8 +7,8 @@
   --colore-primario-scuro: #173f32;
   --colore-sfondo: #f5f2e9;
   --colore-testo: #202923;
-  --font-testo: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-titoli: "Playfair Display", Georgia, serif;
+  --font-testo: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-titoli: "Erode", Georgia, serif;
 }
 
 * {
@@ -51,6 +51,7 @@ a:focus-visible {
 .brand {
   display: inline-block;
   color: var(--colore-testo);
+  font-family: var(--font-titoli);
   font-size: 1.75rem;
   font-weight: bold;
   line-height: 1.2;
@@ -60,6 +61,7 @@ a:focus-visible {
 .brand span {
   display: block;
   margin-top: 0.25rem;
+  font-family: var(--font-testo);
   font-size: 0.875rem;
   font-weight: normal;
 }
