@@ -47,6 +47,9 @@ a:focus-visible {
 }
 
 .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   padding: 1.25rem 0;
   background-color: var(--colore-sfondo-header);
   border-bottom: 4px solid var(--colore-bottone-base);
@@ -74,13 +77,13 @@ a:focus-visible {
 nav {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  margin-top: 1rem;
+  gap: 0.35rem;
+  margin-top: 0.65rem;
 }
 
 nav a {
   display: inline-block;
-  padding: 0.25rem 0;
+  padding: 0.2rem 0;
   text-decoration: none;
 }
 
@@ -95,6 +98,10 @@ nav a[aria-current="page"] {
 }
 
 @media (min-width: 600px) {
+  .site-header {
+    padding: 1.25rem 0;
+  }
+
   .site-header .container {
     display: flex;
     justify-content: space-between;
