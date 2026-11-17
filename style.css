@@ -3,10 +3,12 @@
 
 /* Scelte comuni: ogni regola usa var() per richiamarne il valore. */
 :root {
-  --colore-primario: #245c49;
-  --colore-primario-scuro: #173f32;
-  --colore-sfondo: #f5f2e9;
-  --colore-testo: #202923;
+  --colore-primario: #F82B26;
+  --colore-primario-scuro: #320B0B;
+  --colore-sfondo: #D3E5CB;
+  --colore-testo: #320B0B;
+  --colore-bottone-base: #F2B598;
+  --colore-testo-bottone: #F5F5F5;
   --font-testo: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-titoli: "Erode", Georgia, serif;
 }
@@ -50,7 +52,7 @@ a:focus-visible {
 
 .brand {
   display: inline-block;
-  color: var(--colore-testo);
+  color: var(--colore-primario);
   font-family: var(--font-titoli);
   font-size: 1.75rem;
   font-weight: bold;
@@ -61,6 +63,7 @@ a:focus-visible {
 .brand span {
   display: block;
   margin-top: 0.25rem;
+  color: var(--colore-testo);
   font-family: var(--font-testo);
   font-size: 0.875rem;
   font-weight: normal;
@@ -94,6 +97,7 @@ nav a[aria-current="page"] {
 h1,
 h2,
 h3 {
+  color: var(--colore-primario);
   font-family: var(--font-titoli);
   line-height: 1.2;
 }
@@ -127,14 +131,16 @@ h3 {
   margin-top: 1rem;
   padding: 0.75rem 1.25rem;
   border-radius: 0.5rem;
-  background: var(--colore-primario);
-  color: #ffffff;
+  background: var(--colore-bottone-base);
+  color: var(--colore-testo-bottone);
   font-weight: bold;
   text-decoration: none;
+  transition: background-color 0.2s ease;
 }
 
 .button-link:hover {
-  background: var(--colore-primario-scuro);
+  background: var(--colore-primario);
+  color: var(--colore-testo-bottone);
 }
 
 .content-section {
