@@ -72,17 +72,42 @@ a:focus-visible {
 }
 
 nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
   margin-top: 1rem;
 }
 
 nav a {
   display: inline-block;
-  margin-right: 1rem;
   padding: 0.25rem 0;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 nav a[aria-current="page"] {
   font-weight: bold;
+}
+
+@media (min-width: 600px) {
+  .site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 0;
+  }
 }
 
 .intro {
