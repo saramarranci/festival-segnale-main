@@ -81,6 +81,22 @@
         <li><strong>Cortile Comune (Sede di Mirafiori):</strong> Corso Luigi Settembrini 178 — Mostre e percorsi.</li>
       </ul>
     </section>
+
+    <section class="content-section" aria-labelledby="titolo-meteo">
+      <h2 id="titolo-meteo">Meteo a Torino adesso</h2>
+      <p class="reading-text">Condizioni meteorologiche rilevate oggi in città (dato in tempo reale, non relativo alle date del festival).</p>
+
+      <div class="weather-box">
+        <p id="stato-meteo" aria-live="polite">Caricamento dati meteo in corso...</p>
+        <div id="dati-meteo" hidden>
+          <p class="weather-main"><strong id="meteo-temperatura"></strong> · Vento <strong id="meteo-vento"></strong></p>
+          <p class="event-place">Ultimo aggiornamento: <span id="meteo-ora"></span></p>
+        </div>
+        <p class="weather-source">
+          Dati meteo: <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a>, licenza <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>.
+        </p>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer"><div class="container"><p>Segnale · Progetto didattico · Festival immaginario</p></div></footer>
@@ -104,5 +120,6 @@
       },
     });
   </script>
+  <script src="meteo.js"></script>
 </body>
 </html>

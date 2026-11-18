@@ -345,3 +345,28 @@ h3 {
   outline: 3px solid var(--colore-testo);
   outline-offset: 4px;
 }
+
+.weather-box {
+  max-width: 54rem;
+  margin-top: 1.25rem;
+  padding: 1.25rem;
+  border: 1px solid #b7c0b7;
+  border-radius: 0.75rem;
+  background: #ffffff;
+}
+
+.weather-box p:first-child {
+  margin-top: 0;
+}
+
+.weather-main {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+}
+
+.weather-source {
+  margin: 1rem 0 0;
+  padding-top: 0.75rem;
+  border-top: 1px solid #e2e8e2;
+  font-size: 0.875rem;
+}
